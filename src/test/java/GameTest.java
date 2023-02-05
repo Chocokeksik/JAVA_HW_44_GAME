@@ -61,7 +61,7 @@ public class GameTest {
     public void testNoFirstPlayer() {
         Game game = new Game();
         Player player1 = new Player(1, "V", 20);
-        Player player2 = new Player(2, "N", 20);
+        Player player2 = new Player(2, "N", 30);
 
         game.register(player1);
 
@@ -75,7 +75,7 @@ public class GameTest {
     @Test
     public void testNoSecondPlayer() {
         Game game = new Game();
-        Player player1 = new Player(1, "V", 20);
+        Player player1 = new Player(1, "V", 30);
         Player player2 = new Player(2, "N", 20);
 
         game.register(player2);
@@ -86,5 +86,6 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
 
 }
